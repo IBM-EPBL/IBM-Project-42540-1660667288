@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- mycss file  -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    
+    <title>Assignment2</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><span>Nav</span>Bar</a>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
+
+     <section class="home">
+        <div class="container">
+            <h1>Welcome to Home Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo provident nesciunt, explicabo blanditiis quae impedit officia repellendus, vero et distinctio enim eum necessitatibus cum error pariatur expedita, labore ullam!</p>
+            <input type="button" value="Learn More" id="learn-more">
+        </div>
+     </section>
+
+     <script src="{{url_for('static',filename='js/script.js')}}"></script>
+      
+</body>
+</html>
