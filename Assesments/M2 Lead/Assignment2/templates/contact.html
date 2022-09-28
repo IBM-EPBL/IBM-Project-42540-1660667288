@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- mycss file  -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    
+    <title>Assignment2</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><span>Nav</span>Bar</a>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- what page section starts  -->
+
+    <section class="what-page">
+        <div>
+            <h1>CONTACT</h1>
+            <p>Home <i class="fas fa-angle-double-right"></i> Contact</p>
+        </div>
+    </section>
+    
+    <!-- what page section ends  -->
+
+
+    <!-- contact us section starts  -->
+
+    <section class="contact-us">
+
+        <div class="head">
+          <h2>CONTACT</h2>
+          <h1>Contact For Any Query</h1>
+        </div>
+
+        <div class="form-container">
+              <form action="#">
+                  <input type="text" name="name" id="name" placeholder="Your Name">
+                  <input type="email" name="email" id="email" placeholder="Your Email">
+                  <input type="text" name="subject" id="subject" placeholder="Subject">
+                  <textarea name="message" id="message"  rows="5" placeholder="Message"></textarea>
+                  <input type="button" id="btn" value="Send Message">
+              </form>
+      </div>
+
+    </section>
+
+    <!-- contact us section ends  -->
+    
+    
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+
+</body>
+</html>
